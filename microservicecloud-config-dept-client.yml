@@ -16,10 +16,7 @@ mybatis:
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
 
-spring:
-   application:
-    name: microservicecloud-dept 
-   datasource:
+  datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
     url: jdbc:mysql://localhost:3306/cloudDB01              # 数据库名称
@@ -34,7 +31,7 @@ spring:
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url:
-#      defaultZone: http://localhost:7001/eureka
+      #      defaultZone: http://localhost:7001/eureka
       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
     instance-id: microservicecloud-dept-config-8001
@@ -51,11 +48,7 @@ mybatis:
   type-aliases-package: com.atguigu.springcloud    # 所有Entity别名类所在包
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
-
-spring:
-   application:
-    name: microservicecloud-dept 
-   datasource:
+  datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
     url: jdbc:mysql://localhost:3306/cloudDB02              # 数据库名称
@@ -70,7 +63,7 @@ spring:
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url:
-#      defaultZone: http://localhost:7001/eureka
+      #      defaultZone: http://localhost:7001/eureka
       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
     instance-id: microservicecloud-dept-config-8001
